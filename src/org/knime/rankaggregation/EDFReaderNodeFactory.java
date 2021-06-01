@@ -29,7 +29,7 @@ public class EDFReaderNodeFactory extends NodeFactory<EDFReaderNodeModel> {
 	 * This factory will create a model with the file set as default file.
 	 *
 	 * @param fileURL
-	 *            a valid URL to the default ARFF file.
+	 *            a valid URL to the default EDF file.
 	 */
 	public EDFReaderNodeFactory(final String fileURL) {
 		m_fileURL = fileURL;

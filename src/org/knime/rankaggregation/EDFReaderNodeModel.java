@@ -51,15 +51,15 @@ public class EDFReaderNodeModel extends NodeModel {
 	}
 
 	/**
-	 * Creates a new ARFF reader with a default file.
+	 * Creates a new EDF reader with a default file.
 	 *
-	 * @param arffFileLocation
-	 *            URL to the ARFF file to read
+	 * @param edfFileLocation
+	 *            URL to the EDF file to read
 	 */
-	public EDFReaderNodeModel(final String arffFileLocation) {
+	public EDFReaderNodeModel(final String edfFileLocation) {
 		this();
 		try {
-			m_url = stringToURL(arffFileLocation);
+			m_url = stringToURL(edfFileLocation);
 		} catch (MalformedURLException mue) {
 			LOGGER.error(mue.getMessage());
 		}
