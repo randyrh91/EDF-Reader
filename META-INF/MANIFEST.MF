@@ -1,0 +1,17 @@
+Manifest-Version: 1.0.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EDFReader-Node extension for KNIME Workbench
+Bundle-SymbolicName: org.knime.rankaggregation.edfreader;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: edfreader.jar
+Bundle-Activator: org.knime.rankaggregation.EDFReaderNodePlugin
+Bundle-Vendor: UM and CUJAE
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base,
+ org.knime.core.util
+Bundle-ActivationPolicy: lazy
+Export-Package: org.knime.rankaggregation
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: org.knime.rankaggregation.edfreader
