@@ -28,8 +28,11 @@ import org.knime.core.util.tokenizer.Tokenizer;
 import org.knime.core.util.tokenizer.TokenizerSettings;
 
 /**
+ * 
  * @author Randy Reyna Hernández
+ * 
  */
+
 public abstract class EDFDataTable extends RowIterator implements DataTable {
 
 	private final NodeLogger LOGGER = NodeLogger.getLogger(EDFDataTable.class);

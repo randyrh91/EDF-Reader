@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import org.knime.core.node.InvalidSettingsException;
 
 /**
+ * 
  * @author Randy Reyna Hernández
+ * 
  */
+
 public final class EDFGraph {
 	private int cantNodos;
 	private int cantAristas;

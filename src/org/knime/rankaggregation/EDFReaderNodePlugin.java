@@ -4,6 +4,7 @@ import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;
 
 /**
+ * 
  * @author Randy Reyna Hernandez
  * 
  *         This is the eclipse bundle activator. Note: KNIME node developers
@@ -15,7 +16,8 @@ import org.osgi.framework.BundleContext;
  * 
  */
 public class EDFReaderNodePlugin extends Plugin {
-	// The shared instance.
+
+	
 	private static EDFReaderNodePlugin plugin;
 
 	/**

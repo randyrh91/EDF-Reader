@@ -13,8 +13,11 @@ import org.knime.rankaggregation.tables.DataTableToi;
 import org.knime.rankaggregation.tables.DataTableWmg;
 
 /**
+ * 
  * @author Randy Reyna Hernández
+ * 
  */
+
 public final class EDFFactory extends AbstractFactory {
 
 	EDFDataTable EDFtable;

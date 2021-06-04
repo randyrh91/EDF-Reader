@@ -20,6 +20,7 @@ import org.knime.core.node.NodeSettingsWO;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
 
 /**
+ * 
  * @author Randy Reyna Hernandez
  * 
  *         This is the model implementation of EDFReader. This node reads in

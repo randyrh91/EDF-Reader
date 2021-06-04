@@ -8,6 +8,7 @@ import org.knime.core.node.ExecutionContext;
 import org.knime.core.util.tokenizer.TokenizerSettings;
 
 /**
+ * 
  * @author Randy Reyna Hernández
  *
  *         Each file with a toi extension contains a profile consisting of an

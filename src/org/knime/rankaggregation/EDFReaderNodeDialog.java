@@ -6,6 +6,7 @@ import org.knime.core.node.defaultnodesettings.DialogComponentString;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
 
 /**
+ * 
  * @author Randy Reyna Hernandez
  * 
  *         <code>NodeDialog</code> for the "EDFReader" Node. This node reads in

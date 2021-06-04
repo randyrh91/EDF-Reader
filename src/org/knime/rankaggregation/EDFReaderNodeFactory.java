@@ -5,6 +5,7 @@ import org.knime.core.node.NodeFactory;
 import org.knime.core.node.NodeView;
 
 /**
+ * 
  * @author Randy Reyna Hernandez
  * 
  *         <code>NodeFactory</code> for the "EDFReader" Node. This node reads in

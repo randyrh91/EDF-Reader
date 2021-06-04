@@ -8,6 +8,7 @@ import org.knime.core.node.ExecutionContext;
 import org.knime.core.util.tokenizer.TokenizerSettings;
 
 /**
+ * 
  * @author Randy Reyna Hernández
  * 
  *         Files with a mjg extension describe a majority graph (relation). A

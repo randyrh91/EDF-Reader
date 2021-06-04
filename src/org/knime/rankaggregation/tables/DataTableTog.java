@@ -10,6 +10,7 @@ import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.util.tokenizer.TokenizerSettings;
 
 /**
+ * 
  * @author Randy Reyna Hernández
  *
  *         Files with a tog extension describe a tournament graph. A tournament
