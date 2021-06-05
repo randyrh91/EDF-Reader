@@ -220,7 +220,7 @@ public abstract class EDFDataTable extends RowIterator implements DataTable {
 		InputStream inStream;
 		try {
 			inStream = FileUtil.openStreamWithTimeout(url);
-			Tokenizer tokenizer = new Tokenizer(new BufferedReader(new InputStreamReader(inStream)));
+			Tokenizer tokenizer = new Tokenizer(new BufferedReader(new InputStreamReader(inStream,  "UTF-8")));
 			tokenizer.setSettings(this.getTokenizerSettings());
 			this.tokenizer = tokenizer;
 		} catch (IOException e) {
