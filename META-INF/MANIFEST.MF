@@ -13,5 +13,9 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.core.util
 Bundle-ActivationPolicy: lazy
 Export-Package: org.knime.rankaggregation
+<<<<<<< HEAD
 Bundle-RequiredExecutionEnvironment: JavaSE-11
+=======
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+>>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
 Automatic-Module-Name: org.knime.rankaggregation.edfreader
