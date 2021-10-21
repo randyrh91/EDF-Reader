@@ -4,22 +4,14 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-<<<<<<< HEAD
-
 import org.apache.commons.io.FilenameUtils;
-import org.kanime.rankaggregation.factory.AbstractEDFFactory;
-=======
-import org.kanime.rankaggregation.factory.EDFDataTable;
->>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
-import org.kanime.rankaggregation.factory.EDFFactory;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
 import org.knime.core.node.util.CheckUtils;
-<<<<<<< HEAD
+import org.knime.rankaggregation.factory.AbstractEDFFactory;
+import org.knime.rankaggregation.factory.EDFFactory;
 import org.knime.rankaggregation.tables.AbstractEDFFile;
-=======
->>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
 import org.knime.core.node.ExecutionContext;
 import org.knime.core.node.ExecutionMonitor;
 import org.knime.core.node.InvalidSettingsException;
@@ -48,12 +40,8 @@ public class EDFReaderNodeModel extends NodeModel {
 	static final String CFGKEY_FILEURL = "FileURL";
 	static final String CFGKEY_ROWPREFIX = "rowPrefix";
 	private URL m_url;
-<<<<<<< HEAD
 	private AbstractEDFFactory factory;
 	private AbstractEDFFile file;
-=======
-
->>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
 	private final SettingsModelString m_file = new SettingsModelString(EDFReaderNodeModel.CFGKEY_FILEURL, "");
 	private final SettingsModelString m_rowPrefix = new SettingsModelString(EDFReaderNodeModel.CFGKEY_ROWPREFIX,
 			"Voter");
@@ -91,7 +79,6 @@ public class EDFReaderNodeModel extends NodeModel {
 		if (m_url == null) {
 			throw new NullPointerException("Please, configure EDFReader before executing it.");
 		}
-<<<<<<< HEAD
 		String rowPrefix = m_rowPrefix.getStringValue();
 		String extension = FilenameUtils.getExtension(m_url.getPath());
 		factory = new EDFFactory(m_url, rowPrefix, exec);
@@ -101,17 +88,6 @@ public class EDFReaderNodeModel extends NodeModel {
 		pushFlowVariableInt("reader.voters", numberOfVoters);
 		BufferedDataTable outTable = exec.createBufferedDataTable(file, exec);
 		return new BufferedDataTable[] { outTable };
-=======
-
-		EDFFactory table = new EDFFactory();
-		EDFDataTable edfTable = table.createDataTable(m_url, m_rowPrefix.getStringValue(), exec);
-		edfTable.llenarDataTable();
-		Integer numberOfVoters = edfTable.getNumberOfVoters();
-		pushFlowVariableInt("reader.voters", numberOfVoters);
-		BufferedDataTable outTable = exec.createBufferedDataTable(edfTable, exec);
-		return new BufferedDataTable[] { outTable };
-
->>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
 	}
 
 	/**
@@ -120,14 +96,9 @@ public class EDFReaderNodeModel extends NodeModel {
 	@Override
 	protected void reset() {
 	}
-
+	
 	/**
-<<<<<<< HEAD
 	 * {@inheritDoc}
-=======
-	 * No se puede conocer el formato de la tabla de salida hasta despues de ser
-	 * ejecutado el nodo, pero no antes {@inheritDoc}
->>>>>>> 1f1488e9c892bf62f0f95d5d7a5ced030afdaff3
 	 */
 	@Override
 	protected DataTableSpec[] configure(final DataTableSpec[] inSpecs) throws InvalidSettingsException {

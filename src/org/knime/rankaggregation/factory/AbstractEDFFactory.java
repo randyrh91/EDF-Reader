@@ -1,4 +1,4 @@
-package org.kanime.rankaggregation.factory;
+package org.knime.rankaggregation.factory;
 
 import org.knime.rankaggregation.tables.AbstractEDFFile;
 
@@ -9,6 +9,6 @@ import org.knime.rankaggregation.tables.AbstractEDFFile;
  */
 
 public abstract class AbstractEDFFactory {
-	
-	public abstract AbstractEDFFile readData(String estexion);
+
+	public abstract AbstractEDFFile readData(String extension) throws Exception;
 }
