@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <!-- This is an example for providing an own category 
+      <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Category containing my nodes"
+            icon="icons/default.png"
+            level-id="myNodes"
+            name="My nodes"
+            path="/"/>
+   </extension>
+   -->
+   
+   <extension
+         point="org.knime.workbench.repository.nodes">
+      <node
+            category-path="/rank-aggregation/rank-aggregation-read"
+            factory-class="org.knime.rankaggregation.EDFReaderNodeFactory"/>
+   </extension>
+   <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="A category of Rank Aggregation Problem"
+            icon="src/org/knime/rankaggregation/rankaggred.png"
+            level-id="rank-aggregation"
+            locked="false"
+            name="Rank Aggregation"
+            path="/">
+      </category>
+      <category
+            description="Read of Rank Aggregation Category"
+            icon="src/org/knime/rankaggregation/read.png"
+            level-id="rank-aggregation-read"
+            locked="false"
+            name="Read"
+            path="/rank-aggregation">
+      </category>
+   </extension>
+   
+</plugin>
